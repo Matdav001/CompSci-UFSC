@@ -36,7 +36,6 @@ Example structure:
 INE5402/
 │
 ├── Lists/
-├── Notes/
 ├── Projects/
 ├── Tests/
 ```
@@ -45,6 +44,6 @@ INE5402/
 
 | Directories | Description |
 | :--- | :--- |
-| [:books: Lists](./Lists/README.md) | Exercise lists containing programming problems along with notes and explanations related to the topics covered in each list. |
-| [:computer: Projects](./Projects/README.md) | Course projects where programming concepts and object-oriented design are applied to practical problems. |
-| [:pencil: Tests](./Tests/README.md) | Exams and assessments used to evaluate understanding of programming fundamentals and object-oriented concepts. |
+| [:books: Lists](./Lists/) | Exercise lists containing programming problems along with notes and explanations related to the topics covered in each list. |
+| [:computer: Projects](./Projects/) | Course projects where programming concepts and object-oriented design are applied to practical problems. |
+| [:pencil: Tests](./Tests/) | Exams and assessments used to evaluate understanding of programming fundamentals and object-oriented concepts. |
