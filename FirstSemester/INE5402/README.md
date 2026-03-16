@@ -42,8 +42,16 @@ INE5402/
 
 ## Contents
 
-| Directories | Description |
+### :books: Lists
+Exercise lists containing programming problems along with notes and explanations related to the topics covered in each list.
+| List | Subject |
 | :--- | :--- |
-| [:books: Lists](./Lists/) | Exercise lists containing programming problems along with notes and explanations related to the topics covered in each list. |
-| [:computer: Projects](./Projects/) | Course projects where programming concepts and object-oriented design are applied to practical problems. |
-| [:pencil: Tests](./Tests/) | Exams and assessments used to evaluate understanding of programming fundamentals and object-oriented concepts. |
+| [:one: List01](./Lists/List01/) | Sequencial structure |
+| [:two: List02](./Lists/List02/) | If, elif and else. |
+
+
+### :computer: Projects
+Course projects where programming concepts and object-oriented design are applied to practical problems.
+
+### :pencil: Tests
+Exams and assessments used to evaluate understanding of programming fundamentals and object-oriented concepts.

@@ -1,4 +1,4 @@
-# Fuel consuption
+# Fuel consumption
 # 15 of March of 2026
 
 # Variables declaration
