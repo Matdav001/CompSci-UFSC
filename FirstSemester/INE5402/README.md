@@ -46,8 +46,8 @@ INE5402/
 Exercise lists containing programming problems along with notes and explanations related to the topics covered in each list.
 | List | Subject |
 | :--- | :--- |
-| [:one: List01](./Lists/List01/) | Sequencial structure |
-| [:two: List02](./Lists/List02/) | If, elif and else. |
+| [:one: List01](./Lists/List01/README.md) | Sequencial structure |
+| [:two: List02](./Lists/List02/README.md) | If, elif and else. |
 
 
 ### :computer: Projects

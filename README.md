@@ -42,11 +42,11 @@ CompSci-UFSC/
 
 | Code | Course | Status |
 | :--- | :--- | :--- |
-| `EEL5105` | [Circuitos e Técnicas Digitais](./FirstSemester/EEL5105/) | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
-| `INE5401` | [Introdução à Computação](./FirstSemester/INE5401/) | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
-| `INE5402` | [Programação Orientada a Objetos I](./FirstSemester/INE5402/) | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
-| `INE5403` | [Fundamentos de Matemática Discreta para Computação](./FirstSemester/INE5403/) | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
-| `MTM3110` | [Cálculo 1](./FirstSemester/MTM3110/) | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
+| `EEL5105` | [Circuitos e Técnicas Digitais](./FirstSemester/EEL5105/README.md) | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
+| `INE5401` | [Introdução à Computação](./FirstSemester/INE5401/README.md) | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
+| `INE5402` | [Programação Orientada a Objetos I](./FirstSemester/INE5402/README.md) | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
+| `INE5403` | [Fundamentos de Matemática Discreta para Computação](./FirstSemester/INE5403/README.md) | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
+| `MTM3110` | [Cálculo 1](./FirstSemester/MTM3110/README.md) | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
 
 ## :pushpin: Goals
 

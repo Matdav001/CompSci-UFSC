@@ -1,16 +1,14 @@
-# List 01
+# List 02
 
 ## :clipboard: Topics covered
- - Algorithms and problem solving
- - Programming languages and IDEs
- - Compiled vs. interpreted languages
- - Python installation and development tools
- - Data types: int, float, bool, and str
- - Variables, constants, and naming rules
- - Assignment and common errors
- - Comments in Python
- - Arithmetic operators and precedence
- - Input, output, and type conversion
+ - Selection structures in Python
+ - Conditional statements using if
+ - Logical expressions (True or False)
+ - Simple conditional structure (if)
+ - Compound conditional structure (if-else)
+ - Chained conditional structures
+ - Using elif (else if)
+ - Decision making in algorithms
 
 ## :books: Exercises
 This list contains programming problems, notes, and explanations related to the topics covered in the lesson.
