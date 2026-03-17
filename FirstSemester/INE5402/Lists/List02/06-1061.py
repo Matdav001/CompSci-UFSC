@@ -2,48 +2,48 @@
 # 16 of March of 2026
 
 # Variables declaration
-DIA, DIAINIT = (input('Dia de término: ')).split()
-HINIT, COMMA0, MINIT, COMMA1, SINIT = input('Hora de começo: ').split()
+dia, diainit = (input('Dia de término: ')).split()
+hinit, comma0, minit, comma1, sinit = input('Hora de começo: ').split()
 
-DIAINIT = int(DIAINIT)
-HINIT = int(HINIT)
-MINIT = int(MINIT)
-SINIT = int(SINIT)
+diainit = int(diainit)
+hinit = int(hinit)
+minit = int(minit)
+sinit = int(sinit)
 
-DIA, DIAFIM = (input('Dia de término: ')).split()
-HFIM, COMMA0, MFIM, COMMA1, SFIM = input('Hora de término: ').split()
+dia, diafim = (input('Dia de término: ')).split()
+hfim, comma0, mfim, comma1, sfim = input('Hora de término: ').split()
 
-DIAFIM = int(DIAFIM)
-HFIM = int(HFIM)
-MFIM = int(MFIM)
-SFIM = int(SFIM)
+diafim = int(diafim)
+hfim = int(hfim)
+mfim = int(mfim)
+sfim = int(sfim)
 
 # Seconds calculation
-SDIFF = SFIM - SINIT
+sdiff = sfim - sinit
 
 # Minutes calculation
-if SDIFF < 0:
-    MDIFF = MFIM - MINIT - 1
-    SDIFF = 60 + SDIFF
+if sdiff < 0:
+    mdiff = mfim - minit - 1
+    sdiff = 60 + sdiff
 else:
-    MDIFF = MFIM - MINIT
+    mdiff = mfim - minit
 
 # Hours calculation
-if MDIFF < 0:
-    HDIFF = HFIM - HINIT - 1
-    MDIFF = 60 + MDIFF
+if mdiff < 0:
+    hdiff = hfim - hinit - 1
+    mdiff = 60 + mdiff
 else:
-    HDIFF = HFIM - HINIT
+    hdiff = hfim - hinit
 
 # Days calculation
-if HDIFF < 0:
-    DIADIFF = DIAFIM - DIAINIT - 1
-    HDIFF = 24 + HDIFF
+if hdiff < 0:
+    diadiff = diafim - diainit - 1
+    hdiff = 24 + hdiff
 else:
-    DIADIFF = DIAFIM - DIAINIT
+    diadiff = diafim - diainit
 
-# Print result 
-print(DIADIFF, 'dia(s)')
-print(HDIFF, 'hora(s)')
-print(MDIFF, 'minuto(s)')
-print(SDIFF, 'segundo(s)')
+# Print result
+print(diadiff, 'dia(s)')
+print(hdiff, 'hora(s)')
+print(mdiff, 'minuto(s)')
+print(sdiff, 'segundo(s)')

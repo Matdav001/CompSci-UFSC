@@ -2,19 +2,24 @@
 # 16 of March of 2026
 
 # Variables declaration
-A, B, C = input('A, B e C: ').split()
+a, b, c = input('A, B e C: ').split()
 
 # Variables conversion
-A = float(A)
-B = float(B)
-C = float(C)
+a = float(a)
+b = float(b)
+c = float(c)
 
-DELTA = (B**2) - (4 * A * C)
+# Delta calculation
+delta = (b**2) - (4 * a * c)
 
-if DELTA < 0 or A == 0:
+# If logic
+if delta < 0 or a == 0:
+    # Print result
     print('Impossivel calcular')
-else: 
-    R1 = (-B + DELTA ** 0.5)/(2*A)
-    R2 = (-B - DELTA ** 0.5)/(2*A)
-    print('R1 = %.5f' % R1)
-    print('R2 = %.5f' % R2)
+else:
+    # Calculate roots
+    r1 = (-b + delta ** 0.5)/(2*a)
+    r2 = (-b - delta ** 0.5)/(2*a)
+    # Print result
+    print('R1 = %.5f' % r1)
+    print('R2 = %.5f' % r2)

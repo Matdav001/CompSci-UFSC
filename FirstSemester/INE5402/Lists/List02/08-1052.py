@@ -2,10 +2,10 @@
 # 16 of March of 2026
 
 # Variables declaration
-CODE = int(input('Mês: '))
+code = int(input('Mês: '))
 
-# If logic and print result 
-match CODE: 
+# If logic and print result
+match code:
     case 1:
         print('January')
     case 2:
@@ -30,3 +30,5 @@ match CODE:
         print('November')
     case 12:
         print('December')
+    case _:
+        print('Não existe')

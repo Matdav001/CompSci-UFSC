@@ -2,20 +2,20 @@
 # 16 of March of 2026
 
 # Variables declaration
-WEIGHT = float(input())
-HEIGHT = float(input())
+weight = float(input())
+height = float(input())
 
 # BMI calculation
-IMC = WEIGHT / (HEIGHT ** 2)
+imc = weight / (height ** 2)
 
-# If logic and print result
-if IMC < 18.5:
+# if logic and print result
+if imc < 18.5:
     print('Abaixo do peso')
-elif IMC < 25:
+elif imc < 25:
     print('Peso ideal')
-elif IMC < 30:
+elif imc < 30:
     print('Sobrepeso')
-elif IMC < 40:
+elif imc < 40:
     print('Obesidade')
 else:
-    print('Obesidade Mórbida')
+    print('Obesidade mórbida')

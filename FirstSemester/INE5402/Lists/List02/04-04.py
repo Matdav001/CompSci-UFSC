@@ -2,17 +2,17 @@
 # 16 of March of 2026
 
 # Variables declaration
-N1 = float(input('Primeira nota: '))
-N2 = float(input('Segunda nota: '))
-N3 = float(input('Terceira nota: '))
+n1 = float(input('Primeira nota: '))
+n2 = float(input('Segunda nota: '))
+n3 = float(input('Terceira nota: '))
 
 # Mean calculation
-MEDIA = (N1 + N2 + N3) / 3
+media = (n1 + n2 + n3) / 3
 
 # If logic and print result
-if MEDIA < 5:
+if media < 5:
     print('Reprovado')
-elif MEDIA < 7:
+elif media < 7:
     print('Em recuperação')
 else:
     print('Aprovado')

@@ -2,10 +2,10 @@
 # 16 of March of 2026
 
 # Variables declaration
-CODE = int(input('DDD: '))
+code = int(input('DDD: '))
 
-# If logic and print result 
-match CODE: 
+# If logic and print result
+match code:
     case 61:
         print('Brasilia')
     case 71:

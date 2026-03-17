@@ -2,14 +2,17 @@
 # 16 of March of 2026
 
 # Variables declaration
-A, B, C = input('Notas: ').split()
+a, b, c = input('Pontos: ').split()
 
 # Variables conversion
-A = float(A)
-B = float(B)
-C = float(C)
+a = int(a)
+b = int(b)
+c = int(c)
 
-if A < B and B < C:
-    print (B)
-if B < C and C < A or B < C and C < A:
-    print (C)
+# If logic and print result
+if c < a < b or b < a < c:
+    print (a)
+if a < b < c or c < b < a:
+    print (b)
+if b < c < a or a < c < b:
+    print (c)

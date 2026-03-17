@@ -1,16 +1,16 @@
-# Montlhy payment
+# Monthly payment
 # 16 of March of 2026
 
 # Variables declaration
-HOUSE = float(input('Valor da casa: '))
-SALARY = float(input('Salário do comprador: '))
-YEARS = int(input('Anos pagando: '))
+house = float(input('Valor da casa: '))
+salary = float(input('Salário do comprador: '))
+years = int(input('Anos pagando: '))
 
 # Distance calculation
-PAYMENT = HOUSE / (YEARS * 12)
+payment = house / (years * 12)
 
 # If logic and print result
-if PAYMENT <= SALARY * 0.3:
-    print('R$ %.2f' % PAYMENT)
+if payment <= salary * 0.3:
+    print('R$ %.2f' % payment)
 else:
     print('Pagamento negado')

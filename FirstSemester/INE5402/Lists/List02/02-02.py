@@ -2,24 +2,24 @@
 # 16 of March of 2026
 
 # Variables declaration
-PRICE = float(input('Valor do produto: '))
-CONDITION = int(input('Condição do pagamento: '))
+price = float(input('Valor do produto: '))
+condition = int(input('Condição do pagamento: '))
 
 # If logic
-if CONDITION == 0:
-    VALUE = PRICE * 0.9
-elif CONDITION == 1:
-    VALUE = PRICE * 0.95
-elif CONDITION == 2:
-    VALUE = PRICE
-elif CONDITION >= 3:
-    VALUE = PRICE * 1.2
+if condition == 0:
+    value = price * 0.9
+elif condition == 1:
+    value = price * 0.95
+elif condition == 2:
+    value = price
+else:
+    value = price * 1.2
 
 # Print result
-print('Preço a ser pago: R$ %.2f' % VALUE)
+print('Preço a ser pago: R$ %.2f' % value)
 
 # Print condition
-if CONDITION == 0:
+if condition == 0:
     print('À vista')
 else:
-    print('Em %dx no cartão' % CONDITION)
+    print('Em %dx no cartão' % condition)
