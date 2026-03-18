@@ -1,21 +1,22 @@
-# Vice champion
-# 16 of March of 2026
+# Soceer champion
+# 18 of March of 2026
 
 # Variables declaration
 cv, ce, cs, fv, fe, fs = input('Números: ').split()
 
 # Variables conversion
-cv = int(cv) 
-ce = int(ce) 
-cs = int(cs) 
-fv = int(fv) 
+cv = int(cv)
+ce = int(ce)
+cs = int(cs)
+fv = int(fv)
 fe = int(fe)
-fs = int(fs) 
+fs = int(fs)
 
 # Points calculation
 cpoints = cv * 3 + ce
 fpoints = fv * 3 + fe
 
+# If logic and print result
 if (cpoints > fpoints):
     print ('C')
 elif (cpoints < fpoints):
