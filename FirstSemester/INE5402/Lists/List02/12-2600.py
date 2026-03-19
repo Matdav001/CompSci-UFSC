@@ -8,10 +8,7 @@ d2, d3, d4, d5 = input().split()
 d6 = int(input())
 
 # Variables conversion
-d2 = int(d2)
-d3 = int(d3)
-d4 = int(d4)
-d5 = int(d5)
+d2, d3, d4, d5 = int(d2), int(d3), int(d4), int(d5)
 
 # If logic and print result
 if d1 + d6 != 7:

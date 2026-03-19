@@ -5,9 +5,7 @@
 a, b, c = input('A, B e C: ').split()
 
 # Variables conversion
-a = float(a)
-b = float(b)
-c = float(c)
+a, b, c = float(a), float(b), float(c)
 
 # Delta calculation
 delta = (b**2) - (4 * a * c)

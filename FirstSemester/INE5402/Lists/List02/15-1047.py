@@ -3,11 +3,9 @@
 
 # Variables declaration
 hinit, minit, hfim, mfim = input('Horario inicial e final: ').split()
-
-hinit = int(hinit)
-minit = int(minit)
-hfim = int(hfim)
-mfim = int(mfim)
+ 
+# Variable conversion
+hinit, minit, hfim, mfim = int(hinit), int(minit), int(hfim), int(mfim)
 
 # Minutes calculation
 mdiff = mfim - minit

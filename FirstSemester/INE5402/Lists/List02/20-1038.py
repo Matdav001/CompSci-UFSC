@@ -1,11 +1,11 @@
-# Fast food
+# Snack
 # 18 of March of 2026
 
 # Variables declaration
 code, quantity = input('Código e quantidade: ').split()
 
-code = float(code)
-quantity = int(quantity)
+# Variable conversion
+code, quantity = float(code), int(quantity)
 
 # If logic
 match code:
@@ -19,6 +19,8 @@ match code:
         total = 2 * quantity
     case 5:
         total = 1.5 * quantity
+    case _:
+        total = 0
 
 # Print result
 print('Total: R$ %.2f' % total)

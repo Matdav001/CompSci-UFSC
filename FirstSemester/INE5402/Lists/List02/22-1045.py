@@ -4,36 +4,19 @@
 # Variables declaration
 a, b, c = input('Dimensões do triângulo: ').split()
 
-at = float(a)
-bt = float(b)
-ct = float(c)
+# Variable conversion
+a, b, c = float(a), float(b), float(c)
 
 # Sort decrescent
-if ct > at and ct > bt:
-    a = ct
-    if at > bt:
-        b = at
-        c = bt
-    else:
-        c = at
-        b = bt
-elif bt > at and bt > ct:
-    a = bt
-    if at > ct:
-        b = at
-        c = ct
-    else:
-        c = at
-        b = ct
+if a >= b and a >= c:
+    a, b, c = a, b, c
+elif b >= a and b >= c:
+    a, b, c = b, a, c
 else:
-    a = at
-    if bt > ct:
-        b = bt
-        c = ct
-    else:
-        c = bt
-        b = bt
+    a, b, c = c, a, b
 
+if b < c:
+    b, c = c, b
 
 
 # If logic and print result

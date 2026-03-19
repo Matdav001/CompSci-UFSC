@@ -4,9 +4,8 @@
 # Variables declaration
 c, p, f = input('Alunos, folhas a folhas por aluno: ').split()
 
-c = int(c)
-p = int(p)
-f = int(f)
+# Variable conversion
+c, p, f = int(c), int(p), int(f)
 
 # If logic and print result
 if f * c <= p:

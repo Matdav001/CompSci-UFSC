@@ -5,11 +5,10 @@
 a, b, c = input('Dimensões do colchão: ').split()
 h, l = input('Dimensões da porta: ').split()
 
-a = int(a)
-b = int(b)
-c = int(c)
-h = int(h)
-l = int(l)
+# Variable conversion
+a, b, c = int(a), int(b), int(c)
+h, l = int(h), int(l)
+
 
 # If logic and print result
 if (a <= h and b <=l) or (b <= h and a <=l):

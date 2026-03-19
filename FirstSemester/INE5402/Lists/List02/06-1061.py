@@ -5,18 +5,15 @@
 dia, diainit = (input('Dia de término: ')).split()
 hinit, comma0, minit, comma1, sinit = input('Hora de começo: ').split()
 
-diainit = int(diainit)
-hinit = int(hinit)
-minit = int(minit)
-sinit = int(sinit)
+# Variables conversion
+diainit, hinit, minit, sinit= int(diainit), int(hinit), int(minit), int(sinit)
 
+# Variables declaration
 dia, diafim = (input('Dia de término: ')).split()
 hfim, comma0, mfim, comma1, sfim = input('Hora de término: ').split()
 
-diafim = int(diafim)
-hfim = int(hfim)
-mfim = int(mfim)
-sfim = int(sfim)
+# Variables conversion
+diafim, hfim, mfim, sfim = int(diafim), int(hfim), int(mfim), int(sfim)
 
 # Seconds calculation
 sdiff = sfim - sinit

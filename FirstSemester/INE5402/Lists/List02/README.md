@@ -30,10 +30,13 @@ This list contains programming problems, notes, and explanations related to the 
 | 14 | [1046](./14-1046.py) | Game time |
 | 15 | [1047](./15-1047.py) | Game time with mintutes |
 | 16 | [2375](./16-2375.py) | Ball sedex |
-| 17 | [1078](./17-1048.py) | Salary raise |
+| 17 | [1048](./17-1048.py) | Salary raise |
 | 18 | [2409](./18-2409.py) | Mattress |
 | 19 | [1035](./19-1035.py) | Selection test |
-| 20 | [1038](./20-1038.py) | Fast food |
+| 20 | [1038](./20-1038.py) | Snack |
 | 21 | [2339](./21-2339.py) | Paper planes |
 | 22 | [1045](./22-1045.py) | Triangle types |
 | 23 | [23](./23-23.py) | Triple |
+| 24 | [24](./24-24.py) | Signal and pair |
+| 25 | [25](./25-25.py) | Price discount |
+| 26 | [26](./26-26.py) | Change |

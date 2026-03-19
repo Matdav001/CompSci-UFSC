@@ -5,12 +5,8 @@
 cv, ce, cs, fv, fe, fs = input('Números: ').split()
 
 # Variables conversion
-cv = int(cv)
-ce = int(ce)
-cs = int(cs)
-fv = int(fv)
-fe = int(fe)
-fs = int(fs)
+cv, ce, cs = int(cv), int(ce), int(cs)
+fv, fe, fs = int(fv), int(fe), int(fs)
 
 # Points calculation
 cpoints = cv * 3 + ce

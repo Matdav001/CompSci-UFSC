@@ -4,15 +4,17 @@
 # Variables declaration
 hinit, hfim = input('Hora inicial e final: ').split()
 
-# Variables conversion
-hinit = int(hinit)
-hfim = int(hfim)
+# Variable conversion
+hinit, hfim = int(hinit), int(hfim)
 
 # Points calculation
 hours = hfim - hinit
 
 # If logic
 if hours < 0:
-    hours = 24 - hours
+    hours = 24 + hours
+if hours == 0:
+    hours = 24
+
 # Print result
-print(hours)
+print('O JOGO DUROU %d HORA(S)' % hours)

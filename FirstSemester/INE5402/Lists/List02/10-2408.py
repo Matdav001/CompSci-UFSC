@@ -5,9 +5,7 @@
 a, b, c = input('Pontos: ').split()
 
 # Variables conversion
-a = int(a)
-b = int(b)
-c = int(c)
+a, b, c = int(a), int(b), int(c)
 
 # If logic and print result
 if c < a < b or b < a < c:
