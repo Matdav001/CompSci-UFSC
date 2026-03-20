@@ -1,7 +1,3 @@
-<style>
-    body {text-align: justify}
-</style>
-
 # MTM3110 — Cálculo I
 
 This course introduces the fundamental concepts of calculus for functions of a single real variable, focusing on how to analyze and model change. Students study **limits** and continuity to understand the behavior of functions, which provide the foundation for defining **derivatives** and **integrals**. The course covers techniques for computing derivatives and explores their applications, including rates of change, tangent and normal lines, and solving optimization problems involving maximum and minimum values. It also introduces definite and indefinite integrals as tools for measuring accumulation.

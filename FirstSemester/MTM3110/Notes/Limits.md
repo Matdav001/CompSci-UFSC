@@ -1,7 +1,3 @@
-<style>
-    body {text-align: justify}
-</style>
-
 # Limites
 
 ## Definições
@@ -29,14 +25,17 @@ $x_0$, por ambos os lados, ***mas não igual a $x_0$***
 #### Exemplos
 
 1) Calcule $\lim_{x \to 1} (x+1)$
+
 $$
 \lim_{x \to 1} (x+1) = 2 = f(1)
 $$
 
 2) Considere $f:R∖\{1\}→R$ dada por $f(x)=\frac{x^2−1}{x−1}$ encontre: $\lim_{x \to 1} f(x)$
+
 $$
 \frac{x^2 - 1^2}{x-1} = \frac{(x+1) - \cancel{(x-1)}}{\cancel{x-1}} = x+1
 $$
+
 Valor do limite não depende do valor da função no ponto, assim $\lim_{x \to 1} f(x) = 2$
 
 #### Limites à esquerda e direita
@@ -46,6 +45,7 @@ Para $f$ sendo uma função no intervalo $(x_0−l,x_0)$, com $l>0$, escrevemos 
 $$
 \lim_{x \to x_0^-} f(x) = L
 $$
+
 Se os valores de $f(x)$ podem ser arbitrariamente próximos de $L$ para $x$ próximos de $x_0$ e menores que $x_0$. 
 assim, $L$ é o limite à **ESQUERDA** de $f$.
 
@@ -54,5 +54,6 @@ Para $g$ sendo uma função no intervalo $(x_0−l,x_0)$, com $l>0$, escrevemos 
 $$
 \lim_{x \to x_0^+} g(x) = L
 $$
+
 Se os valores de $g(x)$ podem ser arbitrariamente próximos de $L$ para $x$ próximos de $x_0$ e maiores que $x_0$. 
 Assim, $L$ é o limite à **DIREITA** de $g$.
