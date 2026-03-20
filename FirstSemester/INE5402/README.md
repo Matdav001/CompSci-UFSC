@@ -1,8 +1,12 @@
+<style>
+    body {text-align: justify}
+</style>
+
 # INE5402 — Programação Orientada a Objetos I
 
 This course introduces the fundamentals of computer programming with an emphasis on **object-oriented programming (OOP)**. Students learn how to analyze simple computational problems and design software solutions using basic programming constructs such as variables, arrays, functions, and procedures. The course also covers the core concepts of OOP, including **classes, objects, attributes, and methods**, and provides practical programming experience using an object-oriented programming language.
 
-It may contain:
+It may include:
 - :books: Course notes
 - :pencil2: Exercise Lists
 - :pencil: Exams
@@ -34,15 +38,17 @@ Notes related to specific topics are included within the corresponding exercise 
 Example structure:
 ```
 INE5402/
-│
+├── Exams/
 ├── Lists/
-├── Projects/
-├── Tests/
+└── Projects/
 ```
 
 ## Contents
 
-### :books: Lists
+### :pencil: Exams
+Exams and assessments used to evaluate understanding of programming fundamentals and object-oriented concepts.
+
+### :pencil2: Lists
 Exercise lists containing programming problems along with notes and explanations related to the topics covered in each list.
 | List | Subject |
 | :--- | :--- |
@@ -52,6 +58,3 @@ Exercise lists containing programming problems along with notes and explanations
 
 ### :computer: Projects
 Course projects where programming concepts and object-oriented design are applied to practical problems.
-
-### :pencil: Tests
-Exams and assessments used to evaluate understanding of programming fundamentals and object-oriented concepts.

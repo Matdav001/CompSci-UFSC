@@ -1,3 +1,7 @@
+<style>
+    body {text-align: justify}
+</style>
+
 # List 02
 
 ## :clipboard: Topics covered
