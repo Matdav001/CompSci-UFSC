@@ -2,13 +2,13 @@
 # 15 of March of 2026
 
 # Variables declaration
-A = int(input('Variável A: '))
-B = int(input('Variável B: '))
-C = int(input('Variável C: '))
-D = int(input('Variável D: '))
+a = int(input('Variável A: '))
+b = int(input('Variável B: '))
+c = int(input('Variável C: '))
+d = int(input('Variável D: '))
 
 # Difference calculation
-DIFERENCA =  (A * B - C * D)
+diferenca =  (a * b - c * d)
 
 # Print result
-print('DIFERENCA =', DIFERENCA)
+print('DIFERENCA =', diferenca)

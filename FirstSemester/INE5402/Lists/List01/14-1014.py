@@ -2,11 +2,11 @@
 # 15 of March of 2026
 
 # Variables declaration
-X = int(input('Variável X: '))
-Y = float(input('Variável Y: '))
+x = int(input('Variável X: '))
+y = float(input('Variável Y: '))
 
 # Consumption calculation
-CONS = X/Y 
+cons = x/y 
 
 # Print result
-print('%.3f km/l' % CONS)
+print('%.3f km/l' % cons)

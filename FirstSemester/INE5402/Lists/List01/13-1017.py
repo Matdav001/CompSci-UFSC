@@ -2,11 +2,11 @@
 # 15 of March of 2026
 
 # Variables declaration
-T = int(input('Tempo de viagem: '))
-V = int(input('Velocidade média: '))
+t = int(input('Tempo de viagem: '))
+v = int(input('Velocidade média: '))
 
 # Liters calculation
-LITROS = (T*V)/12
+litros = (t*v)/12
 
 # Print result
-print('%.3f' % LITROS)
+print('%.3f' % litros)

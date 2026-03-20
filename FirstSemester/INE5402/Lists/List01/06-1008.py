@@ -2,13 +2,13 @@
 # 15 of March of 2026
 
 # Variables declaration
-NUM = int(input('Numero do funcionário: '))
-HOURS = int(input('Horas trabalhadas: '))
-VALUE = float(input('Valor por hora: '))
+num = int(input('Numero do funcionário: '))
+hours = int(input('Horas trabalhadas: '))
+value = float(input('Valor por hora: '))
 
 # Salary calculation
-SALARIO = HOURS * VALUE
+salario = hours * value
 
 # Print result
-print('NUMBER =', NUM)
-print('SALARY = U$ %.2f' % SALARIO)
+print('NUMBER =', num)
+print('SALARY = U$ %.2f' % salario)

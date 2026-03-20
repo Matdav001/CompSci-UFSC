@@ -2,14 +2,14 @@
 # 15 of March of 2026
 
 # Variables declaration
-AGE = int(input('Idade: '))
+age = int(input('Idade: '))
 
 # Age calculation
-ANO = int(AGE / 365)
-MES = int(AGE % 365 / 30)
-DIAS = AGE % 365 % 30
+ano = int(age / 365)
+mes = int(age % 365 / 30)
+dias = age % 365 % 30
 
 # Print result
-print(ANO, 'ano(s)')
-print(MES, 'mes(es)')
-print(DIAS, 'dia(s)')
+print(ano, 'ano(s)')
+print(mes, 'mes(es)')
+print(dias, 'dia(s)')

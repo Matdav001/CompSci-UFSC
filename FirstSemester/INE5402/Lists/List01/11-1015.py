@@ -2,17 +2,14 @@
 # 15 of March of 2026
 
 # Variables declaration
-X1, Y1 = input('Primeiro ponto: ').split()
-X2, Y2 = input('Segundo ponto: ').split()
+x1, y1 = input('Primeiro ponto: ').split()
+x2, y2 = input('Segundo ponto: ').split()
 
 # Variables conversion
-X1 = float(X1)
-Y1 = float(Y1)
-X2 = float(X2)
-Y2 = float(Y2)
+x1, y1, x2, y2 = float(x1), float(y1), float(x2), float(y2)
 
 # Distance calculation
-DIST = (((X2-X1)**2)+((Y2-Y1)**2))**0.5
+dist = (((x2-x1)**2)+((y2-y1)**2))**0.5
 
 # Print result
-print('%.4f' % DIST)
+print('%.4f' % dist)

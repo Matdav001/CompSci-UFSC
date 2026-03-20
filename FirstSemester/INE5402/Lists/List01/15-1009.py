@@ -2,12 +2,12 @@
 # 15 of March of 2026
 
 # Variables declaration
-NAME = input('Nome: ')
-SALARY = float(input('Salário: '))
-SALES = float(input('Total de vendas: '))
+name = input('Nome: ')
+salary = float(input('Salário: '))
+sales = float(input('Total de vendas: '))
 
 # Final salary calculation
-MONEY = SALARY + (SALES*0.15)
+money = salary + (sales*0.15)
 
 # Print result
-print('TOTAL = R$ %.2f' % MONEY)
+print('TOTAL = R$ %.2f' % money)

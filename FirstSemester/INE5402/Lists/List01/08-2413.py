@@ -2,10 +2,10 @@
 # 15 of March of 2026
 
 # Variables declaration
-T = int(input('Variável t: '))
+t = int(input('Variável t: '))
 
 # Product calculation
-FIRSTLINK = T*4
+firstlink = t*4
 
 # Print result
-print(FIRSTLINK)
+print(firstlink)

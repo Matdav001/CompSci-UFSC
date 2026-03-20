@@ -2,11 +2,11 @@
 # 15 of March of 2026
 
 # Variables declaration
-N = int(input('Variável N: '))
-M = int(input('Variável M: '))
+n = int(input('Variável N: '))
+m = int(input('Variável M: '))
 
 # Difference calculation
-PRESSUREDIFF = N - M
+pressurediff = n - m
 
 # Print result
-print(PRESSUREDIFF)
+print(pressurediff)

@@ -2,11 +2,11 @@
 # 15 of March of 2026
 
 # Variables declaration
-A = float(input('Variável A: '))
-B = float(input('Variável B: '))
+a = float(input('Variável A: '))
+b = float(input('Variável B: '))
 
 # Mean calculation
-MEDIA = ((A * 3.5) + (B * 7.5)) / 11
+media = ((a * 3.5) + (b * 7.5)) / 11
 
 # Print result
-print('MEDIA = %.5f' % MEDIA)
+print('MEDIA = %.5f' % media)

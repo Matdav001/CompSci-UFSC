@@ -2,11 +2,11 @@
 # 15 of March of 2026
 
 # Variables declaration
-A = int(input('Variável A: '))
-B = int(input('Variável B: '))
+a = int(input('Variável A: '))
+b = int(input('Variável B: '))
 
 # Product calculation
-PROD = A * B
+prod = a * b
 
 # Print result
-print('PROD =', PROD)
+print('PROD =', prod)
