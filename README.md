@@ -2,6 +2,8 @@
 
 This repository documents my journey through the Computer Science program at **UFSC** (Universidade Federal de Santa Catarina).
 
+References:
+
 [![UFSC](https://img.shields.io/badge/University-UFSC-blue)](https://ufsc.br/)
 [![Course](https://img.shields.io/badge/Degree-Computer%20Science-green)](https://cco.ufsc.br/)
 
