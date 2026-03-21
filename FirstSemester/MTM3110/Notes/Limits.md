@@ -72,10 +72,16 @@ Nesse caso, $L$ é o **LIMITE À DIREITA** de $g$ em $x_0$.
 
 </details>
 
-Teorema: seja $f$ uma função definida por um intervalo aberto que contém 
+Seja $f$ uma função definida por um intervalo aberto que contém 
 $x_0$, com exceção possivelmente de $x_0$, logo:
 
-$$\lim_{x \to x_0} f(x) = L \iff \lim_{x \to x_0^-}f(x)=L \ \& \lim_{x \to x_0^+} f(x)=L$$
+$$
+\begin{aligned}
+\lim_{x \to x_0} f(x) = L 
+\iff {} & \lim_{x \to x_0^-} f(x) = L \\
+        & \lim_{x \to x_0^+} f(x) = L
+\end{aligned}
+$$
 
 ## Limites infinitos
 
