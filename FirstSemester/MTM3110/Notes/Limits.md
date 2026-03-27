@@ -155,3 +155,24 @@ $$\lim_{x \to -\infty} \frac{1}{x}=0$$
 > $$\lim_{x \to +\infty} k(x) = +\infty \qquad \lim_{x \to -\infty} k(x) = +\infty$$
 
 </details>
+
+<details>
+<summary><b>Exemplos</b></summary>
+
+> E) $\lim_x\to -\infty \ f(x^n)$:
+> 
+> $$para n=1 \Rightarrow \ \lim_x\to-\infty \ x = -\infty$$
+> 
+> $$para n=2 \Rightarrow \ \lim_x\to-\infty \ x^2= \infty$$
+> $$x^2 = x.x = \lim_x\to-\infty \ x^2= \infty$$
+>
+> $$ para n=3 \Rightarrow \ \lim_x\to-\infty = -\infty$$
+> $$x^3 = x^2.x = \lim_x\to-\infty \ x^3= -\infty$$
+>
+> $$para n=1 \Rightarrow \ \lim_x\to-\infty = \infty$$
+> $$x^4 = x^3.x = \lim_x\to-\infty \ x^4= \infty$$
+> $$\lim_x\to-\infty = -\infty \ se impar e \infty \ se par$$
+
+> F) $$\lim_x\to$$
+
+</details>

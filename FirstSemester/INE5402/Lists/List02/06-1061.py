@@ -2,15 +2,15 @@
 # 16 of March of 2026
 
 # Variables declaration
-dia, diainit = (input('Dia de término: ')).split()
-hinit, comma0, minit, comma1, sinit = input('Hora de começo: ').split()
+dia, diainit = (input("Dia de término: ")).split()
+hinit, comma0, minit, comma1, sinit = input("Hora de começo: ").split()
 
 # Variables conversion
-diainit, hinit, minit, sinit= int(diainit), int(hinit), int(minit), int(sinit)
+diainit, hinit, minit, sinit = int(diainit), int(hinit), int(minit), int(sinit)
 
 # Variables declaration
-dia, diafim = (input('Dia de término: ')).split()
-hfim, comma0, mfim, comma1, sfim = input('Hora de término: ').split()
+dia, diafim = (input("Dia de término: ")).split()
+hfim, comma0, mfim, comma1, sfim = input("Hora de término: ").split()
 
 # Variables conversion
 diafim, hfim, mfim, sfim = int(diafim), int(hfim), int(mfim), int(sfim)
@@ -40,7 +40,7 @@ else:
     diadiff = diafim - diainit
 
 # Print result
-print(diadiff, 'dia(s)')
-print(hdiff, 'hora(s)')
-print(mdiff, 'minuto(s)')
-print(sdiff, 'segundo(s)')
+print(diadiff, "dia(s)")
+print(hdiff, "hora(s)")
+print(mdiff, "minuto(s)")
+print(sdiff, "segundo(s)")
