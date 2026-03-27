@@ -1,4 +1,4 @@
-# Product table
+# Multiplication table
 # 25 of March of 2026
 
 # Variable declaration

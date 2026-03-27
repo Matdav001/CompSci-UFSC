@@ -1,4 +1,4 @@
-# Mean Bigger and Smaller
+# Mean, bigger and smaller
 # 25 of March of 2026
 
 # Variable declaration

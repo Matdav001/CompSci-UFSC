@@ -48,8 +48,10 @@ Exams and assessments used to evaluate understanding of programming fundamentals
 Exercise lists containing programming problems along with notes and explanations related to the topics covered in each list.
 | List | Subject |
 | :--- | :--- |
-| [:one: List01](./Lists/List01/README.md) | Sequencial structure |
+| [:one: List01](./Lists/List01/README.md) | Sequential structure |
 | [:two: List02](./Lists/List02/README.md) | If, elif and else. |
+| [:three: List03](./Lists/List03/README.md) | For, break, pass and continue. |
+| [:four: List04](./Lists/List04/README.md) | While loop and import. |
 
 
 ### :computer: Projects
