@@ -1,24 +1,28 @@
-# MTM3110 — Cálculo I
+# INE5403 - Fundamentos de Matemática Discreta para Computação
 
-This course introduces the fundamental concepts of calculus for functions of a single real variable, focusing on how to analyze and model change. Students study **limits** and continuity to understand the behavior of functions, which provide the foundation for defining **derivatives** and **integrals**. The course covers techniques for computing derivatives and explores their applications, including rates of change, tangent and normal lines, and solving optimization problems involving maximum and minimum values. It also introduces definite and indefinite integrals as tools for measuring accumulation.
+This course introduces the fundamental concepts of **discrete mathematics** for computer science, focusing on the mathematical tools used to reason about computation and formal structures. The main topics include **sets and sequences**, **propositional and first-order logic**, **proof methods**, **induction and recursion**, **combinatorics**, **relations**, **functions**, **ordering relations**, **algebraic structures**, **number theory**, **finite-state machines**, and **applications of discrete mathematics**.
 
 It may include:
-- :pencil2: Exercise Lists
-- :books: Course notes
+- :pencil2: Exercise Lists and Notes
 - :pencil: Exams
 
 ## :page_with_curl: Description
 
-- Limits and continuity
-- Derivatives
-- Applications of derivatives:
-  - rates of change
-  - tangent and normal lines
-  - optimization problems
-  - maximum and minimum values
-- Integrals:
-  - indefinite integrals
-  - definite integrals
+- Sets and subsets
+- Sequences and sums
+- Propositional logic
+- First-order logic
+- Methods of proof
+- Mathematical induction
+- Recursive definitions
+- Number theory
+- Combinatorics
+- Relations and special types of relations
+- Functions and growth of functions
+- Ordered relations
+- Algebraic structures
+- Finite-state machines
+- Applications of discrete mathematics
 
 ## :open_file_folder: Repository Structure
 
@@ -26,9 +30,8 @@ This course folder is organized into sections for the different types of materia
 
 Example structure:
 ```
-MTM3110/
+INE5403/
 ├── Lists/
-├── Notes/
 └── Exams/
 ```
 
@@ -38,13 +41,12 @@ MTM3110/
 Exams and assessments related to the calculus topics covered in the course.
 
 ### :pencil2: Lists
-Exercise lists containing calculus problems related to each topic.
-| List | Subject |
-| :--- | :--- |
-| [:one: List01](./Lists/List01.md) | Limits |
+Exercise lists containing problems for each topic covered in the discipline. There are notes on the topics covered in the list.
+| List | Subject | Status |
+| :--- | :--- | :---: |
+| :one: No list | Presentation | ![status](https://img.shields.io/badge/Finished-green) |
+| :two: No List | Methods of Proof | ![status](https://img.shields.io/badge/Finished-green) |
+| [:two:.:one: List02.1](./Lists/List02.1.md) | Propostions | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
+| [:two:.:two: List02.2](./Lists/List02.2.md) | Predicates and Quantifiers | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
+| [:two:.:three: List02.3](./Lists/List02.3.md) | Mathematical Proofs | ![status](https://img.shields.io/badge/In%20Progress-FFFF66) |
 
-### :books: Notes
-Course notes, summaries, and supporting material for the topics covered in the course.
-| Notes | Subject |
-| :--- | :--- |
-| [:one: Limits](./Notes/Limits.md) | Limit Concept and Properties |
