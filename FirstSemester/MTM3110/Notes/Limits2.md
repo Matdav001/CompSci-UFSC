@@ -1,4 +1,0 @@
-# Limites
-
-## Continuidade
-
