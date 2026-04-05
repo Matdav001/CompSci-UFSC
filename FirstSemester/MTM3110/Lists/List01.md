@@ -58,20 +58,24 @@
     - e) $x=-3$; $x=2$; $x=5$
 
 - 10
-    - a) $$
-    - b) $\infty$
+    - a) $\lim_{x \to 12^-} = 150$
+    - b) $\lim_{x \to 12^+} = 300$
+    - c) Explicação: Eles são os valores de $f(x)$ quando $x$ se aproxima de 12 pela esquerda e pela direita, respectivamente, nesse caso, é o valor antes e depois da injeção no paciente.
 
-- 11
-
-- 12
+| 11 ) | 12 ) |
+| :---: | :---: |
+| ![11](/FirstSemester/MTM3110/Lists/List01Images/89-11.png) | ![12](/FirstSemester/MTM3110/Lists/List01Images/89-12.png)|
+|  Qualquer $a$ exceto $a=\pi$ | Qualquer $a$ exceto $a=-1$ |
 
 ---
 ### Página 90
 
-- 15
 
-- 17
+| 15 ) | 17 ) |
+| :---: | :---: |
+| ![15](/FirstSemester/MTM3110/Lists/List01Images/90-15.png) | ![17](/FirstSemester/MTM3110/Lists/List01Images/90-17.png)|
 
-- 19
 
-- 21
+- 19 ) Aproxima de $\frac{2}{3}$ pela esquerda e pela direita, feito na calculadora.
+
+- 21 ) Aproxima de $\frac{1}{2}$ pela esquerda e pela direita, feito na calculadora.
