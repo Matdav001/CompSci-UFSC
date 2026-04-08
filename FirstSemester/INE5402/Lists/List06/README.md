@@ -19,7 +19,7 @@ This list contains programming problems, notes, and explanations related to the 
 | 01 | [01](./01-01.py) | Area Function |
 | 02 | [1048](./02-1048.py) | Salary increase |
 | 03 | [03](./03-03.py) | Elevator capacity control |
-| 04 | [04](./04-04.py) | Time zone |
-| 05 | [1051](./05-1051.py) | Mattress |
-| 06 | [1061](./06-1061.py) | Whole numbers |
-| 07 | [1050](./07-1050.py) | Distance Traveled |
+| 04 | [2057](./04-2057.py) | Time zone |
+| 05 | [2409](./05-2409.py) | Mattress |
+| 06 | [06](./06-06.py) | Whole numbers |
+| 07 | [07](./07-07.py) | Distance Traveled |
