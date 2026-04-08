@@ -1,20 +1,17 @@
-# Random game
-# 25 of March of 2026
+# Salary discount
+# 30 of March of 2026
 
-# Imports
-import random
-
-rand = random.randint(0, 10)
-tries: int = 0
+# Variable declaration
+quitCode = "Y"
 
 # While loop
-while True:
+while quitCode != "N":
     # Variable declaration
-    tries += 1
-    num = int(input("Digite o número: "))
-    # If logic and print result
-    if num != rand:
-        print("Número errado")
+    num = 1
+    salary = int(input("Digite o salário: "))
+    if salary * 0.11 >= 320:
+        print("Desconto de R$ 320,00 reais, sendo %.2f%% do salario" % (32000 / salary))
     else:
-        print("Voce Venceu em %d tentativas" % tries)
-        break
+        print("Desconto de R$ %.2f reais, sendo 11%% do salario" % (salary * 0.11))
+    # Verify stop condition
+    quitCode = input("Continuar [Y/n]? ").upper()
