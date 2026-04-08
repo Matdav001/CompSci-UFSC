@@ -52,6 +52,8 @@ Exercise lists containing programming problems along with notes and explanations
 | [:two: List02](./Lists/List02/README.md) | If, elif and else. |
 | [:three: List03](./Lists/List03/README.md) | For, break, pass and continue. |
 | [:four: List04](./Lists/List04/README.md) | While loop and import. |
+| [:five: List05](./Lists/List05/README.md) | Conditional and Repeating structure. |
+| [:six: List06](./Lists/List06/README.md) | Functions (def). |
 
 
 ### :computer: Projects
