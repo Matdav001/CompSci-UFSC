@@ -1,14 +1,17 @@
 # List 04
 
 ## :clipboard: Topics covered
- - Selection structures in Python
- - Conditional statements using if
- - Logical expressions (True or False)
- - Simple conditional structure (if)
- - Compound conditional structure (if-else)
- - Chained conditional structures
- - Using elif (else if)
- - Decision making in algorithms
+ ● Python standard library and modules
+ ● Using import to include modules
+ ● Importing entire modules
+ ● Importing specific functions with from ... import
+ ● Purpose of modules (code reuse and simplification)
+ ● Repetition structures in Python
+ ● While loop (while)
+ ● Infinite loop with while True
+ ● While-else structure
+ ● Using while for input validation
+ ● Using while to control program execution flow
 
 ## :books: Exercises
 This list contains programming problems, notes, and explanations related to the topics covered in the lesson.
