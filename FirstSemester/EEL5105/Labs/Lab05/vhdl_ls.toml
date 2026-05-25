@@ -1,0 +1,7 @@
+# vhdl_ls.toml config file
+
+[libraries]
+lab05.files = [
+    "*.vhd",
+    "*.vhdl"
+]

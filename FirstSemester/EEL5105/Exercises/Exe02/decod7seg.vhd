@@ -1,0 +1,27 @@
+library ieee;
+  use ieee.std_logic_1164.all;
+
+entity decod7seg is
+  port (
+    G     : in    std_logic_vector(3 downto 0);
+    SAIDA : out   std_logic_vector(6 downto 0)
+  );
+end decod7seg;
+
+architecture circuito of decod7seg is
+
+begin
+
+  SAIDA <= "1000000" when G = "0000" else -- 0
+           "1111001" when G = "0001" else -- 1
+           "0100100" when G = "0010" else -- 2
+           "0110000" when G = "0011" else -- 3
+           "0011001" when G = "0100" else -- 4
+           "0010010" when G = "0101" else -- 5
+           "0000010" when G = "0110" else -- 6
+           "1111000" when G = "0111" else -- 7
+           "0000000" when G = "1000" else -- 8
+           "0011000" when G = "1001" else -- 9
+           "1111111";                     -- Null
+
+end circuito;
