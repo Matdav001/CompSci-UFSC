@@ -1,15 +1,15 @@
 library ieee;
   use ieee.std_logic_1164.all;
 
-entity mux is
+entity multiplexador74 is
   port (
     F1, F2, F3, F4 : in    std_logic_vector(6 downto 0);
     SEL            : in    std_logic_vector(1 downto 0);
     SAIDA          : out   std_logic_vector(6 downto 0)
   );
-end mux;
+end multiplexador74;
 
-architecture circuito of mux is
+architecture circuito of multiplexador74 is
 
 begin
 

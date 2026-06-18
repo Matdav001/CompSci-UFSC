@@ -3,90 +3,106 @@ library ieee;
 
 entity counter_time is
   port (
-    UPDOWN   : in    std_logic;
     CLOCK    : in    std_logic;
     RESET    : in    std_logic;
     CONTAGEM : out   std_logic_vector(3 downto 0)
   );
 end counter_time;
 
-architecture bhv of counter_time is
+architecture simple of counter_time is
 
-  type states is (e0, e1, e2, e3, e4);
-
-  signal ea, pe : states;
+  signal atual, proximo : std_logic_vector(3 downto 0);
 
 begin
 
-  p1 : process (CLOCK, RESET) is
+  p_registrador : process (CLOCK, RESET) is
   begin
 
     if (RESET = '0') then
-      ea <= e0;
+      atual <= "0000";
     elsif (CLOCK'event and CLOCK = '0') then
-      ea <= pe;
+      atual <= proximo;
     end if;
 
   end process;
 
-  p2 : process (ea, UPDOWN) is
+  p_proximo : process (atual) is
   begin
 
-    case ea is
+    case atual is
 
-      when e0 =>
+      when "0000" =>
 
-        CONTAGEM <= "0001";
+        proximo <= "0001"; -- 0 -> 1
 
-        if (UPDOWN = '1') then
-          pe <= e4;
-        else
-          pe <= e1;
-        end if;
+      when "0001" =>
 
-      when e1 =>
+        proximo <= "0010"; -- 1 -> 2
 
-        CONTAGEM <= "0010";
+      when "0010" =>
 
-        if (UPDOWN = '1') then
-          pe <= e0;
-        else
-          pe <= e2;
-        end if;
+        proximo <= "0011"; -- 2 -> 3
 
-      when e2 =>
+      when "0011" =>
 
-        CONTAGEM <= "0011";
+        proximo <= "0100"; -- 3 -> 4
 
-        if (UPDOWN = '1') then
-          pe <= e1;
-        else
-          pe <= e3;
-        end if;
+      when "0100" =>
 
-      when e3 =>
+        proximo <= "0101"; -- 4 -> 5
 
-        CONTAGEM <= "0100";
+      when "0101" =>
 
-        if (UPDOWN = '1') then
-          pe <= e2;
-        else
-          pe <= e4;
-        end if;
+        proximo <= "0110"; -- 5 -> 6
 
-      when e4 =>
+      when "0110" =>
 
-        CONTAGEM <= "0101";
+        proximo <= "0111"; -- 6 -> 7
 
-        if (UPDOWN = '1') then
-          pe <= e3;
-        else
-          pe <= e0;
-        end if;
+      when "0111" =>
+
+        proximo <= "1000"; -- 7 -> 8
+
+      when "1000" =>
+
+        proximo <= "1001"; -- 8 -> 9
+
+      when "1001" =>
+
+        proximo <= "1010"; -- 9 -> 10
+
+      when "1010" =>
+
+        proximo <= "1011"; -- 10 -> 11
+
+      when "1011" =>
+
+        proximo <= "1100"; -- 11 -> 12
+
+      when "1100" =>
+
+        proximo <= "1101"; -- 12 -> 13
+
+      when "1101" =>
+
+        proximo <= "1110"; -- 13 -> 14
+
+      when "1110" =>
+
+        proximo <= "1111"; -- 14 -> 15
+
+      when "1111" =>
+
+        proximo <= "0000"; -- 15 -> 0
+
+      when others =>
+
+        proximo <= "0000";
 
     end case;
 
   end process;
 
-end bhv;
+  CONTAGEM <= atual;
 
+end simple;
