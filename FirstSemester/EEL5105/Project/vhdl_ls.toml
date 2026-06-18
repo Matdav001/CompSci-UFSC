@@ -1,0 +1,7 @@
+# vhdl_ls.toml config file
+
+[libraries]
+project.files = [
+    "*.vhd",
+    "*.vhdl"
+]
