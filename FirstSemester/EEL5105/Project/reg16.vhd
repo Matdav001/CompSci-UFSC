@@ -19,7 +19,7 @@ begin
     if (RST = '0') then
       Q <= "0000000000000000";
     elsif (CLK'event and CLK = '1') then
-      if (EN = '0') then
+      if (EN = '1') then
         Q <= D;
       end if;
     end if;

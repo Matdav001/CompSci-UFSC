@@ -5,6 +5,7 @@ entity counter_round is
   port (
     CLOCK    : in    std_logic;
     RESET    : in    std_logic;
+    E        : in    std_logic;
     CONTAGEM : out   std_logic_vector(3 downto 0)
   );
 end counter_round;
@@ -19,9 +20,11 @@ begin
   begin
 
     if (RESET = '0') then
-      atual <= "0000";
+      atual <= "1111";
     elsif (CLOCK'event and CLOCK = '0') then
-      atual <= proximo;
+      if (E = '1') then
+        atual <= proximo;
+      end if;
     end if;
 
   end process;
