@@ -21,7 +21,7 @@ begin
   p1 : process (CLK, RESET, cont) is
   begin
 
-    if (RESET = '1') then
+    if (RESET = '0') then
       cont    <= x"0000000";
       CLK_1HZ <= '0';
     elsif (CLK'event and CLK = '1') then

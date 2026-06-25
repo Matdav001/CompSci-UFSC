@@ -21,7 +21,7 @@ begin
   p1 : process (CLK, RESET, cont) is -- clock 500Hz
   begin
 
-    if (RESET = '1') then
+    if (RESET = '0') then
       cont    <= x"000";
       CLK_1HZ <= '0';
       SIM_2HZ <= '0';

@@ -31,7 +31,7 @@ architecture circuito of usertop is
   signal enter     : std_logic;
   signal reset     : std_logic;
 
-  component datapath is
+  component datapath
     port (
       S                                              : in    std_logic_vector(15 downto 0);
       CLK, R1, R2, E1, E2, E3, E4, E5                : in    std_logic;
@@ -41,14 +41,14 @@ architecture circuito of usertop is
     );
   end component datapath;
 
-  component controle is
+  component controle
     port (
       CLOCK, K1, K0, ENDTIME, ENDGAME, ENDROUND : in    std_logic;
       R1, R2, E1, E2, E3, E4, E5                : out   std_logic
     );
   end component controle;
 
-  component buttonsync is
+  component buttonsync
     port (
       KEY0, KEY1, CLK : in    std_logic;
       ENTER, RESET    : out   std_logic
