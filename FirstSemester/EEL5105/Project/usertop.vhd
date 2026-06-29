@@ -1,14 +1,12 @@
 library ieee;
   use ieee.std_logic_1164.all;
-  use ieee.std_logic_unsigned.all; -- necessário para o +
+  use ieee.std_logic_unsigned.all;
 
 entity usertop is
   port (
     -- CLOCK_50:in std_logic;
-    CLK_500HZ : in    std_logic;
-    -- RKEY:in std_logic_vector(3 downto 0);
-    KEY : in    std_logic_vector(3 downto 0);
-    -- RSW:in std_logic_vector(17 downto 0);
+    CLK_500HZ                                      : in    std_logic;
+    KEY                                            : in    std_logic_vector(3 downto 0);
     SW                                             : in    std_logic_vector(17 downto 0);
     LEDR                                           : out   std_logic_vector(17 downto 0);
     HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : out   std_logic_vector(6
@@ -31,7 +29,7 @@ architecture circuito of usertop is
   signal enter     : std_logic;
   signal reset     : std_logic;
 
-  component datapath
+  component datapath is
     port (
       S                                              : in    std_logic_vector(15 downto 0);
       CLK, R1, R2, E1, E2, E3, E4, E5                : in    std_logic;
@@ -41,14 +39,14 @@ architecture circuito of usertop is
     );
   end component datapath;
 
-  component controle
+  component controle is
     port (
       CLOCK, K1, K0, ENDTIME, ENDGAME, ENDROUND : in    std_logic;
       R1, R2, E1, E2, E3, E4, E5                : out   std_logic
     );
   end component controle;
 
-  component buttonsync
+  component buttonsync is
     port (
       KEY0, KEY1, CLK : in    std_logic;
       ENTER, RESET    : out   std_logic
@@ -57,7 +55,7 @@ architecture circuito of usertop is
 
 begin
 
-  bot : component buttonsync port map (KEY(0), KEY(1), CLK_500HZ, enter, reset); -- CLK??
+  bot : component buttonsync port map (KEY(0), KEY(1), CLK_500HZ, enter, reset);
 
   data : component datapath port map (SW(15 downto 0), CLK_500HZ, r1, r2, e1, e2, e3, e4, e5, end_game, end_time, end_round, HEX7, HEX6, HEX5, HEX4, HEX3, HEX2, HEX1, HEX0, LEDR(15 downto 0));
 

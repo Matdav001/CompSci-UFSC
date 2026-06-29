@@ -62,6 +62,7 @@ architecture arqdtp of datapath is
   signal h03         : std_logic_vector(6 downto 0);
   signal clk1        : std_logic;
   signal rst_divfreq : std_logic;
+  signal e4r1        : std_logic;
   signal endgame     : std_logic;
   signal endtime     : std_logic;
   signal endround    : std_logic;
@@ -73,7 +74,7 @@ architecture arqdtp of datapath is
 
   signal pe_reg, pe : std_logic_vector(5 downto 0);
 
-  component somador
+  component somador is
     port (
       A : in    std_logic_vector(2 downto 0);
       B : in    std_logic_vector(2 downto 0);
@@ -83,42 +84,42 @@ architecture arqdtp of datapath is
     );
   end component somador;
 
-  component selector
+  component selector is
     port (
       IN0, IN1, IN2, IN3 : in    std_logic;
       SAIDA              : out   std_logic_vector(1 downto 0)
     );
   end component selector;
 
-  component rom3
+  component rom3 is
     port (
       ADDRESS : in    std_logic_vector(3 downto 0);
       DATA    : out   std_logic_vector(15 downto 0)
     );
   end component rom3;
 
-  component rom2
+  component rom2 is
     port (
       ADDRESS : in    std_logic_vector(3 downto 0);
       DATA    : out   std_logic_vector(15 downto 0)
     );
   end component rom2;
 
-  component rom1
+  component rom1 is
     port (
       ADDRESS : in    std_logic_vector(3 downto 0);
       DATA    : out   std_logic_vector(15 downto 0)
     );
   end component rom1;
 
-  component rom0
+  component rom0 is
     port (
       ADDRESS : in    std_logic_vector(3 downto 0);
       DATA    : out   std_logic_vector(15 downto 0)
     );
   end component rom0;
 
-  component registrador16
+  component registrador16 is
     port (
       CLK, RST, EN : in    std_logic;
       D            : in    std_logic_vector(15 downto 0);
@@ -126,7 +127,7 @@ architecture arqdtp of datapath is
     );
   end component registrador16;
 
-  component registrador6
+  component registrador6 is
     port (
       CLK, RST, EN : in    std_logic;
       D            : in    std_logic_vector(5 downto 0);
@@ -134,7 +135,7 @@ architecture arqdtp of datapath is
     );
   end component registrador6;
 
-  component registrador
+  component registrador is
     port (
       CLK, RST, EN : in    std_logic;
       D            : in    std_logic_vector(3 downto 0);
@@ -142,7 +143,7 @@ architecture arqdtp of datapath is
     );
   end component registrador;
 
-  component multiplexador74
+  component multiplexador74 is
     port (
       F1, F2, F3, F4 : in    std_logic_vector(6 downto 0);
       SEL            : in    std_logic_vector(1 downto 0);
@@ -150,7 +151,7 @@ architecture arqdtp of datapath is
     );
   end component multiplexador74;
 
-  component multiplexador72
+  component multiplexador72 is
     port (
       F1, F2 : in    std_logic_vector(6 downto 0);
       SEL    : in    std_logic;
@@ -158,7 +159,7 @@ architecture arqdtp of datapath is
     );
   end component multiplexador72;
 
-  component multiplexador16
+  component multiplexador16 is
     port (
       F1, F2, F3, F4 : in    std_logic_vector(15 downto 0);
       SEL            : in    std_logic_vector(1 downto 0);
@@ -166,67 +167,69 @@ architecture arqdtp of datapath is
     );
   end component multiplexador16;
 
-  component decodtermo
+  component decodtermo is
     port (
       G     : in    std_logic_vector(3 downto 0);
       SAIDA : out   std_logic_vector(15 downto 0)
     );
   end component decodtermo;
 
-  component decod7seg
+  component decod7seg is
     port (
       G     : in    std_logic_vector(3 downto 0);
       SAIDA : out   std_logic_vector(6 downto 0)
     );
   end component decod7seg;
 
-  component counter_time
+  component counter_time is
     port (
       CLOCK    : in    std_logic;
       RESET    : in    std_logic;
       E        : in    std_logic;
-      CONTAGEM : out   std_logic_vector(3 downto 0)
+      CONTAGEM : out   std_logic_vector(3 downto 0);
+      END_TIME : out   std_logic
     );
   end component counter_time;
 
-  component counter_round
+  component counter_round is
     port (
-      CLOCK    : in    std_logic;
-      RESET    : in    std_logic;
-      E        : in    std_logic;
-      CONTAGEM : out   std_logic_vector(3 downto 0)
+      CLOCK     : in    std_logic;
+      RESET     : in    std_logic;
+      E         : in    std_logic;
+      CONTAGEM  : out   std_logic_vector(3 downto 0);
+      END_ROUND : out   std_logic
     );
   end component counter_round;
 
-  component comp_4
+  component comp_4 is
     port (
       P    : in    std_logic_vector(2 downto 0);
       PEQ4 : out   std_logic
     );
   end component comp_4;
 
-  component comp_n
+  component comp_n is
     port (
       C, U : in    std_logic_vector(3 downto 0);
       P0   : out   std_logic_vector(2 downto 0)
     );
   end component comp_n;
 
-  component comp_e
+  component comp_e is
     port (
       INC, INU : in    std_logic_vector(15 downto 0);
       E        : out   std_logic_vector(2 downto 0)
     );
   end component comp_e;
 
-  component buttonsync
+  component buttonsync is
     port (
       KEY0, KEY1, CLK : in    std_logic;
       ENTER, RESET    : out   std_logic
     );
   end component buttonsync;
 
-  component div_freq_de2
+  component div_freq_de2 is
     port (
       CLK     : in    std_logic;
       RESET   : in    std_logic;
@@ -234,7 +237,7 @@ architecture arqdtp of datapath is
     );
   end component div_freq_de2;
 
-  component div_freq
+  component div_freq is
     port (
       CLK              : in    std_logic;
       RESET            : in    std_logic;
@@ -248,19 +251,24 @@ begin
   END_GAME  <= endgame;
   END_ROUND <= endround;
 
-  divfreq_emu : component div_freq port map (CLK, R2, clk1);  -- usar esse componente para o emulador
+  -- divfreq_emu : component div_freq port map (CLK, R2, clk1);  -- usar esse componente para o emulador
 
-  --  DIVFREQ: div_Freq_DE2 port map(clk, R2, clk1); -- usar esse componente para a placa
+  divfreq : component div_freq_de2 port map (CLK, R2, clk1); -- usar esse componente para a placa
 
-  selector0 : component selector port map (E1, E2, R1, E5, sel_mux);
+  e4r1 <= E4 or R1;
 
-  f      <= x when endtime = '0' else (others => '0');
+  selector0 : component selector port map (E1, E2, e4r1, E5, sel_mux);
+
+  f      <= x when endtime = '0' else
+            (others => '0');
   result <= "000" & endgame & f;
 
   reg0 : component registrador6 port map (CLK, R2, E1, S(5 downto 0), sel);
 
   pe <= p & e;
+
   reg1 : component registrador6 port map (CLK, R2, E4, pe, pe_reg);
+
   p_reg <= pe_reg(5 downto 3);
   e_reg <= pe_reg(2 downto 0);
 
@@ -290,11 +298,9 @@ begin
 
   comp5 : component comp_4 port map (p, endgame);
 
-  cont_round : component counter_round port map (CLK, R2, E3, x);
-  endround <= '1' when x = "0000" else '0';
+  cont_round : component counter_round port map (CLK, R2, E3, x, endround);
 
-  cont_time : component counter_time port map (clk1, R1, '1', counttime);
-  endtime <= '1' when counttime = "0000" else '0';
+  cont_time : component counter_time port map (clk1, R1, E2, counttime, endtime);
 
   decod7seg71 : component decod7seg port map (result(7 downto 4), h71);
 
@@ -321,6 +327,7 @@ begin
   decod7seg21 : component decod7seg port map (user(11 downto 8), h21);
 
   decsignal2 <= '0' & p_reg;
+
   decod7seg22 : component decod7seg port map (decsignal2, h22);
 
   decod7seg23 : component decod7seg port map (code(11 downto 8), h23);
@@ -334,11 +341,13 @@ begin
   mux7 : component multiplexador74 port map ("1000111", h11, "0000110", h13, sel_mux, HEX1);
 
   decsignal0 <= "00" & sel(1 downto 0);
+
   decod7seg00 : component decod7seg port map (decsignal0, h00);
 
   decod7seg01 : component decod7seg port map (user(3 downto 0), h01);
 
   decsignal1 <= '0' & e_reg;
+
   decod7seg02 : component decod7seg port map (decsignal1, h02);
 
   decod7seg03 : component decod7seg port map (code(3 downto 0), h03);
@@ -347,6 +356,7 @@ begin
 
   decodtermo_inst : component decodtermo port map (x, ledr150);
 
-  LED <= ledr150 when E1 = '0' else (others => '0');
+  LED <= ledr150 when E1 = '0' else
+         (others => '0');
 
 end arqdtp;
